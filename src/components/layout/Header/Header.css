@@ -1,0 +1,37 @@
+.Header {
+    width: 100vw;
+    height: 10vh;
+    background-color: #1b1b1b;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 2%;
+}
+.Header-setting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 6vw;
+    margin: 0%;
+    padding:0%;
+    transition: 0.4s ease-in-out all;
+}
+.Header-notification , .Header-date  {
+    padding: 2px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.Header-setting {
+    padding: 0px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.Header-setting:hover , .Header-date:hover ,.Header-notification:hover {
+    background-color: rgb(54, 54, 54);
+}
+
+.Modal-notification {
+    
+}

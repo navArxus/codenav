@@ -1,0 +1,7 @@
+.Body {
+    background:url("./../../../assests/background2.jpg") ;
+    background-position: center;
+    background-size: cover;
+    height: 85vw;
+    width: 100vw;
+} 

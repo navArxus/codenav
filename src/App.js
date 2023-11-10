@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import Formcheck from './components/usernameform/formcheck';
 import './App.css';
-
+import BodyLayout from './components/layout/bodyLayout';
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Form check is username is set or not*/}
+      <Formcheck/>
+      {/* Body layout file */}
+      <BodyLayout/>
+
     </div>
   );
 }
