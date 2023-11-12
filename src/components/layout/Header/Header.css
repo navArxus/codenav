@@ -1,6 +1,6 @@
 .Header {
     width: 100vw;
-    height: 10vh;
+    height: 30px;
     background-color: #1b1b1b;
     display: flex ;
     align-items: center;
@@ -12,12 +12,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: fit-content;
     width: 6vw;
     margin: 0%;
     padding:0%;
-    transition: 0.4s ease-in-out all;
 }
 .Header-notification , .Header-date  {
+    height: fit-content;
     padding: 2px 12px;
     border-radius: 20px;
     cursor: pointer;
@@ -32,6 +33,3 @@
     background-color: rgb(54, 54, 54);
 }
 
-.Modal-notification {
-    
-}

@@ -13,5 +13,8 @@ function App() {
     </div>
   );
 }
-
+// Tech stack 
+// Terminal
+// Contact
+// About 
 export default App;

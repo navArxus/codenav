@@ -1,0 +1,104 @@
+.Modal-notification {
+    width: 400px;
+    height: fit-content;
+    position: fixed;
+    top: 30px;
+    left: 2%;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.Modal-notification-default {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.Modal-notification p {
+    text-align: center;
+    padding: 10px;
+}
+
+.Modal-notification-default h2 {
+    font-size: 20px;
+}
+
+.Modal-notification-default p {
+    padding: 0px;
+    text-align: start;
+    font-size: 15px;
+}
+
+.Modal-date {
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    top: 30px;
+    left: 52%;
+    /* transform: translateX(-50%); */
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.Modal-setting {
+    width: 300px;
+    height: fit-content;
+    position: fixed;
+    top: 30px;
+    right: 2%;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+}
+
+.Modal-setting-batteryinfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Modal-setting-batteryinfo-right {
+    text-align: end;
+}
+
+.Modal-setting-wifiinfo {
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.Modal-notification,
+.Modal-setting {
+    animation: updown 0.4s both;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.Modal-date {
+    animation: updowndate 0.4s both;
+}
+
+@keyframes updowndate {
+    0% {
+        transform: translate(-50%, -100%);
+    }
+    100% {
+        transform: translate(-50%, 0%);
+
+    }
+}
