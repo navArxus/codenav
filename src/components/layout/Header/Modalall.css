@@ -10,6 +10,12 @@
     padding: 5px;
 }
 
+@media screen and (max-width: 450px) {
+    .Modal-notification {
+        width: 90vw;
+        left: 0;
+    }
+}
 .Modal-notification-default {
     border: 1px solid black;
     padding: 5px;
@@ -37,10 +43,14 @@
     position: fixed;
     top: 30px;
     left: 52%;
-    /* transform: translateX(-50%); */
     background-color: white;
     overflow: hidden;
     border-radius: 10px;
+}
+@media screen and (max-width: 450px) {
+    .Modal-date {
+        left: 50%;
+    }
 }
 
 .Modal-setting {
@@ -53,6 +63,11 @@
     border-radius: 10px;
     color: black;
     background-color: white;
+}
+@media screen and (max-width: 300px) {
+    .Modal-setting {
+        width: 90vw;
+    }
 }
 
 .Modal-setting-batteryinfo {
@@ -76,7 +91,7 @@
 
 .Modal-notification,
 .Modal-setting {
-    animation: updown 0.4s both;
+    animation: updown 0.2s both;
 }
 
 @keyframes updown {
@@ -90,7 +105,7 @@
 }
 
 .Modal-date {
-    animation: updowndate 0.4s both;
+    animation: updowndate 0.2s both;
 }
 
 @keyframes updowndate {

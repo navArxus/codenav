@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: space-between;
     height: fit-content;
-    width: 6vw;
+    width: 80px;
     margin: 0%;
     padding:0%;
 }
@@ -33,3 +33,28 @@
     background-color: rgb(54, 54, 54);
 }
 
+
+.Header-date-responsive ,.Header-notification-responsive {
+    width: 30px;
+    height: 20px;
+    display:grid ;
+    place-items: center;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.Header-date-responsive:hover ,.Header-notification-responsive:hover {
+    background-color: rgb(54, 54, 54);
+}
+.Header-responsive {
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+@media screen and (max-width: 450px) {
+    .Header-responsive {
+        display: flex;
+    }
+    .Header-date ,.Header-notification {
+        display: none;
+    }
+}
