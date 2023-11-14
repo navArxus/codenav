@@ -4,4 +4,28 @@
     background-size: cover;
     height: 95vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
 } 
+
+.folder-whole-icon img {
+    /* border: 2px dotted yellow ; */
+    width: 90px;
+}
+.folder-whole-icon p {
+    margin: 0%;
+    padding: 0%;
+    /* border: 2px solid white; */
+}
+.folder-whole-icon {
+    width: 100px ;
+    height: 110px;
+    /* border: 2px dotted green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
