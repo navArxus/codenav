@@ -8,6 +8,7 @@
     color: black;
     border-radius: 10px;
     padding: 5px;
+    z-index: 999999999999999;
 }
 
 @media screen and (max-width: 450px) {
@@ -46,6 +47,7 @@
     background-color: white;
     overflow: hidden;
     border-radius: 10px;
+    z-index: 999999999999999;
 }
 @media screen and (max-width: 450px) {
     .Modal-date {
@@ -63,6 +65,7 @@
     border-radius: 10px;
     color: black;
     background-color: white;
+    z-index: 999999999999999;
 }
 @media screen and (max-width: 300px) {
     .Modal-setting {

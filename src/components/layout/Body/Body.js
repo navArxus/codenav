@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Body.css"
 import Folder from './folder'
-import Window from '../../Modal/window'
+import WindowCount from '../Windows/windows'
 const folder = [
     {
         id: 1,
@@ -33,7 +33,7 @@ const folder = [
 const Body = () => {
     return (
         <div className='Body'>
-            <Window />
+            <WindowCount />
             {folder.map((folderDetails) => {
                 return (
                     <Folder data={folderDetails} key={folderDetails.id} />
