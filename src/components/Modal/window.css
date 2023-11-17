@@ -6,11 +6,19 @@
     color: white;
     border-radius:20px ;
     box-shadow: rgba(0, 0, 0, 0.714) 0px 48px 100px 0px;
+    overflow: auto;
+}
+@media screen and (max-width: 600px){
+    .window {
+        width: 90%;
+        height: 60%;
+    }
 }
 .maxmize {
     width: 100%;
     height: 100%;
 }
+
 .handle {
     border-radius:15px 15px 0px 0px  ;
     background-color: black;

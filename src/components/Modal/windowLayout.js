@@ -52,7 +52,8 @@ const WindowLayout = props => {
                 </div>
                 <div>
                     {props.data.name === "About" && <AboutWindow />}
-                    {props.data.name !== "About" && props.data.name}
+                    {props.data.name === "Terminal" && <p>Terminal</p>}
+                    {(props.data.name !== "Terminal" && props.data.name !== "About") && props.data.name}
                 </div>
             </div>
 

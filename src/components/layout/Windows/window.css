@@ -1,6 +1,7 @@
 .about-window {
     margin: 0px 10px;
     line-height: 1.5;
+    overflow: auto;
 }
 .currentwindow {
     z-index: 99;

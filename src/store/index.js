@@ -37,11 +37,32 @@ const windowSlice = createSlice({
         }
     },
 })
+const terminalState = {
+    chats:[]
+}
+const command = {
+    user:localStorage.getItem("username"),
+    about:"about section",
+    techstack:"techstack section",
+    contact:"contact section"
+}
+const terminalSlice = createSlice({
+    name:"terminal",
+    initialState:terminalState,
+    reducers : {
+        commandexecutes (state,action) {
+
+        }
+    },
+
+})
 
 const store = configureStore({
     reducer: {
         userwindow: windowSlice.reducer,
+        terminal: terminalSlice.reducer,
     }
 })
 export const windowaction = windowSlice.actions;
+export const terminalactions = terminalSlice.actions;
 export default store;
