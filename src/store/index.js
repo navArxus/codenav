@@ -42,16 +42,32 @@ const terminalState = {
 }
 const command = {
     user:localStorage.getItem("username"),
-    about:"about section",
-    techstack:"techstack section",
-    contact:"contact section"
+    about:"Hi, I'm Nav. Passinate about Full stack developer. I have a passion for creating and developing web applications that are both visually appealing and functional.",
+    techstack:"HTML , CSS , Javascript , Jquery , python , C , React.js , Firebase ",
+    defaultcommand:"No command found. use /help to know more ",
+    help:"Command avaiable\t>user\n>about\n>techstack\n\n>help"
 }
 const terminalSlice = createSlice({
     name:"terminal",
     initialState:terminalState,
     reducers : {
         commandexecutes (state,action) {
-
+            if (action.payload in command) {
+                let newChat = {
+                    username:localStorage.getItem("username"),
+                    command:action.payload,
+                    result:command[action.payload],
+                }
+                state.chats.push(newChat)
+            }
+            else {
+                let newChat = {
+                    username:localStorage.getItem("username"),
+                    command:action.payload,
+                    result:command["defaultcommand"],
+                }
+                state.chats.push(newChat)
+            }
         }
     },
 

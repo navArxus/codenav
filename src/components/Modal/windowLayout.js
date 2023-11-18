@@ -9,6 +9,7 @@ import abouticon from "../../assests/about.png"
 import { useDispatch ,useSelector } from "react-redux"
 import { windowaction } from "../../store/index"
 import AboutWindow from "../layout/Windows/About";
+import TerminalWindow from "../layout/Windows/Terminal";
 
 const WindowLayout = props => {
 
@@ -52,7 +53,7 @@ const WindowLayout = props => {
                 </div>
                 <div>
                     {props.data.name === "About" && <AboutWindow />}
-                    {props.data.name === "Terminal" && <p>Terminal</p>}
+                    {props.data.name === "Terminal" && <TerminalWindow/>}
                     {(props.data.name !== "Terminal" && props.data.name !== "About") && props.data.name}
                 </div>
             </div>

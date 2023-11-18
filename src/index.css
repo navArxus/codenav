@@ -2,10 +2,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@font-face {
+  font-family: cascadiacode;
+  src: url(./assests/Cascadia.ttf);
+}
 * {
-  font-family: monospace,
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: cascadiacode , monospace;
   margin: 0%;
   padding: 0%;
 

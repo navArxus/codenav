@@ -6,3 +6,10 @@
 .currentwindow {
     z-index: 99;
 }
+.terminal-window input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    width: fit-content;
+}

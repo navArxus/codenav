@@ -4,12 +4,13 @@ import WindowLayout from '../../Modal/windowLayout'
 
 const WindowCount = () => {
     const data = useSelector(state => state.userwindow)
-    console.log(data)
     return (
         <div>
             {data.windows.map(win => {
-                return(
-                    <WindowLayout data={win} >{win.name}</WindowLayout>
+                return (
+                    <div key={win.id}>
+                        <WindowLayout data={win} >{win.name}</WindowLayout>
+                    </div>
                 )
             })}
         </div>
