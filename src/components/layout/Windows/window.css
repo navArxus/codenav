@@ -13,3 +13,27 @@
     color: white;
     width: fit-content;
 }
+.techstack {
+    display: flex;
+    flex-wrap: wrap;
+}
+.techstack-skill {
+    cursor: pointer;
+    margin: 10px ;
+    width: 105px;
+    height: 125px;
+    border-radius: 10px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.techstack-skill:hover {
+    transform: scale(1.03);
+    background-color: rgba(128, 128, 128, 0.114);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}

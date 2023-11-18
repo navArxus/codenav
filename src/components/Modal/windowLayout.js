@@ -10,6 +10,8 @@ import { useDispatch ,useSelector } from "react-redux"
 import { windowaction } from "../../store/index"
 import AboutWindow from "../layout/Windows/About";
 import TerminalWindow from "../layout/Windows/Terminal";
+import Techstack from "../layout/Windows/techstack";
+import Contact from "../layout/Windows/contact";
 
 const WindowLayout = props => {
 
@@ -54,7 +56,9 @@ const WindowLayout = props => {
                 <div>
                     {props.data.name === "About" && <AboutWindow />}
                     {props.data.name === "Terminal" && <TerminalWindow/>}
-                    {(props.data.name !== "Terminal" && props.data.name !== "About") && props.data.name}
+                    {props.data.name === "Tech Stack" && <Techstack/>}
+                    {props.data.name === "Contact" && <Contact/>}
+                    {props.data.name === "Project" && <p>Comming soon ...</p>}
                 </div>
             </div>
 
