@@ -1,5 +1,30 @@
 .Footer {
     width: 100vw;
-    height: 5vh;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99999999;
     background-color: #1b1b1b;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+.Footer img {
+    width: 25px;
+    padding: 0px 20px;
+}
+.Footer small {
+    font-size: 8pt;
+}
+.Footer-each {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Footer-each:hover {
+    background-color: rgba(128, 128, 128, 0.112);
 }
